@@ -32,7 +32,7 @@
       {{-- <a href="" class="h1"><b>SI</b> Akur</a> --}}
       <h1><b>SI</b> Akur</h1>
       {{-- <span>Welcome Back!</span> --}}
-    </div>
+    </div> 
     <div class="card-body">
 
       <form action="/login" method="post">

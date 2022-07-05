@@ -42,7 +42,7 @@
 
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-dark">
-    <!-- Left navbar links -->
+    <!-- Left navbar links --> 
     @include('partials.navbar')
 
   </nav>

@@ -35,7 +35,7 @@
                                 {{ $message }}
                             </div>
                         @enderror
-                    </div>
+                    </div> 
                 </div>
                 <div class="form-group row">
                     <label for="Username" class="col-sm-2 col-form-label">Username</label>

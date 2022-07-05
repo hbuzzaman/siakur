@@ -18,7 +18,7 @@
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
 </div>
-<!-- /.content-header -->
+<!-- /.content-header --> 
 <div class="card col-lg-8">
     <div class="card-body">
         <div class="tab-content">

@@ -70,7 +70,7 @@
                             <a class="btn btn-info btn-sm " href="/user/{{ $user->username }}/edit">
                                 <i class="fas fa-pencil-alt"></i>
                                 Edit
-                            </a>
+                            </a> 
                                 @method('delete')
                                 @csrf
                                 <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">

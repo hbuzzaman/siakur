@@ -73,8 +73,7 @@
              <a href="" class="nav-link"> {{-- /alatukur/Kalibrasi  --}}
               <i class="fas fa-hard-hat nav-icon"></i>
               <p>Kalibrasi</p>
-            </a>
-          </li>
+            </a> 
           <li class="nav-item">
             <a href="" class="nav-link"> {{-- /alatukur/Peminjaman  --}}
               <i class="fab fa-bitcoin nav-icon"></i>

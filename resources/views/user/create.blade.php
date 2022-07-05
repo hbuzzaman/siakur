@@ -68,7 +68,7 @@
                             <option value="Qc">QC</option>
                             <option value="Manager">Manager</option>
                         </select>
-                        @error('role')
+                        @error('role') 
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>
