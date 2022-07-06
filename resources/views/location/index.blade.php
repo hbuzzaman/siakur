@@ -63,10 +63,10 @@
                     <td>{{ $l->description }}</td>
                     <td class="project-actions text-right">
                         <form action="/lokasi/{{ $l->name }}" method="post">
-                        <a class="btn btn-info btn-sm " href="/lokasi/{{ $l->name }}/edit">
-                            <i class="fas fa-pencil-alt"></i>
-                            Edit
-                        </a>
+                            <a class="btn btn-info btn-sm " href="/lokasi/{{ $l->name }}/edit">
+                                <i class="fas fa-pencil-alt"></i>
+                                Edit
+                            </a>
                             @method('delete')
                             @csrf
                             <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">

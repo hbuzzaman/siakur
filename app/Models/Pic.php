@@ -15,4 +15,10 @@ class Pic extends Model
         # code...
         return 'nip';
     }
+
+    public function akur() //menghubungkan dengan model akur
+    {
+        # code...
+        return $this->hasMany(Alatukur::class); //satu pic dimiliki banyak alatukur
+    }
 }

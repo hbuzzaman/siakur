@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Location;
+use App\Models\Pic;
 use App\Models\Alatukur;
 use Illuminate\Http\Request;
 
@@ -28,6 +30,10 @@ class AkurController extends Controller
     public function create()
     {
         //
+        return view('akur.create', [
+            'pics' => Pic::all(), //bisa diambil dari model pic
+            'locations' => Location::all()
+        ]);
     }
 
     /**
@@ -39,6 +45,16 @@ class AkurController extends Controller
     public function store(Request $request)
     {
         //
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'no_seri' => 'required|numeric|unique:alatukurs',
+            'pic_id' => 'required',
+            'location_id' => 'required'
+        ]);
+
+        // dd($validatedData);
+        Alatukur::create($validatedData);
+        return redirect('/alatukur')->with('success', 'Success add');
     }
 
     /**

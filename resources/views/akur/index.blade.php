@@ -49,20 +49,23 @@
             <tr>
                 <th style="width: 10px">#</th>
                 <th>Nama</th>
-                {{-- <th>NIP</th> --}}
-                {{-- <th style="width: 225px">Actions</th> --}}
+                <th>No Seri</th>
+                <th>PIC</th>
+                <th>Location</th>
                 <th style="width: 160px">Actions</th>
             </tr>
         </thead>
         <tbody>
-            @foreach ($akurs as $p)
+            @foreach ($akurs as $akur)
                 <tr>
                     <td>{{ $loop->iteration }}</td>
-                    <td>{{ $p->id }}</td> 
-                    {{-- <td>{{ $p->nip }}</td> --}}
-                    {{-- <td class="project-actions text-right">
-                        <form action="/pic/{{ $p->nip }}" method="post">
-                        <a class="btn btn-info btn-sm " href="/pic/{{ $p->nip }}/edit">
+                    <td>{{ $akur->name }}</td> 
+                    <td>{{ $akur->no_seri }}</td> 
+                    <td>{{ $akur->pic->name }}</td> 
+                    <td>{{ $akur->location->name }}</td>
+                    <td class="project-actions text-right">
+                        <form action="" method="post">
+                        <a class="btn btn-info btn-sm " href="/edit">
                             <i class="fas fa-pencil-alt"></i>
                             Edit
                         </a>
@@ -73,7 +76,7 @@
                                 Delete
                             </button>
                         </form>
-                    </td> --}}
+                    </td>
                 </tr>
             @endforeach
         </tbody>

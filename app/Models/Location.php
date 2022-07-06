@@ -15,4 +15,10 @@ class Location extends Model
         # code...
         return 'name';
     }
+
+    public function akur() //menghubungkan dengan model akur
+    {
+        # code...
+        return $this->hasMany(Alatukur::class); //satu pic dimiliki banyak alatukur
+    }
 }

@@ -15,6 +15,10 @@ class CreateAlatukursTable extends Migration
     {
         Schema::create('alatukurs', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('no_seri')->unique(); //integer
+            $table->foreignId('pic_id'); //relasi ke tabel categories
+            $table->foreignId('location_id'); //relasi ke tabel user
             $table->timestamps();
         });
     }
