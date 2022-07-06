@@ -32,7 +32,8 @@ class AkurController extends Controller
         //
         return view('akur.create', [
             'pics' => Pic::all(), //bisa diambil dari model pic
-            'locations' => Location::all()
+            // 'locations' => Location::all()
+            'locations' => Location::where('description', '=', 'RPA' )->get()
         ]);
     }
 
